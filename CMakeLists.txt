@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 project(apriltag)
 
-find_package(OpenCV QUIET)
+find_package(OpenCV 4 QUIET)
 
 include_directories(.)
 aux_source_directory(common COMMON_SRC)
@@ -112,4 +112,3 @@ endif(OpenCV_FOUND)
 
 # install example programs
 install(TARGETS apriltag_demo RUNTIME DESTINATION bin)
-
